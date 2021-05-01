@@ -12,7 +12,7 @@
             skaicius = "tekstas";
         console.log("labas as ");
         console.log(skaicius);
-        var teksta = "pirmas" + "Antras";
+        var teksta = "Pirmas " + "Antras";
         console.log(teksta);
         
         warskaicius = 12/14*6;
@@ -26,8 +26,8 @@
         console.log(ats);
 
         var reiksme = "tu ";
-        reiksme += "esi ";
-        reiksme = reiksme + "finas"
+        reiksme += "ziuri ";
+        reiksme = reiksme + "fin an jake"
 
         console.log(reiksme);
 
@@ -35,13 +35,97 @@
         var ats = Math.round( ats*100) / 100;
         console.log(ats);
 
-        var vardas = "Mindaugas";
-        var pav = "Balsys";
-        var metai_g = "1993"
+        var vardas = "Rick";
+        var pav = "Morthy";
+        var metai_g = "1990"
         
         console.log("Aš esu " + vardas + " " + pav + ". Man yra:" + (2021 - metai_g) + "-neri metai." );
 
-        
+        var sk1 = Math.round(Math.random()* 4) ; 
+        var sk2 = Math.round(Math.random()* 4) ; 
+
+        console.log(sk1 + "  " + sk2);
+
+        let gal = 2 > (Math.round(Math.random()* 4));
+        if(gal){
+            console.log("Nugi tiesa");
+        }
+        console.log(gal);
+
+        rain_drop = Math.random();
+
+        if( rain_drop == rain_drop && (rain_drop* 10) > 1 ){
+            console.log("2 super sk");
+        }else{
+            console.log("Nugi vel netiesa");
+        }
+
+        // if( kaskas || arba kita)
+        // switch();
+        // for();
+        // while(){};
+        // function(){};
+
+        var kint1 = Math.round(Math.random()* 4) ;
+        var kint2 = Math.round(Math.random()* 4) ;
+
+        if( kint1 > kint2 && kint1 !== kint2){
+            var did = kint1;
+            var maz = kint2;
+            }else{
+            var did = kint2;
+            var maz = kint1;
+        }
+
+        rez = Math.round( (kint1 / kint2)*100) / 100;
+        console.log(rez);
+
+        // Sekantis uzdavinys
+        // 3. Naudokite funkciją  Math.random(). Sukurkite tris kintamuosius ir naudodamiesi funkcija  Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintamąjį turintį vidurinę reikšmę.
+
+    var min = 0;
+    var max = 10;
+    
+    var pirmas = min + Math.floor(Math.random() * (1 + max - min));
+    var antras = min + Math.floor(Math.random() * (1 + max - min));
+    var trecias = min + Math.floor(Math.random() * (1 + max - min));
+
+
+    if((pirmas > antras && antras > trecias) || (pirmas < antras && antras < trecias)){
+         console.log( "1Sk:" + pirmas + " vid:" + antras + " gal:" + trecias);
+        }else{
+
+            if((antras > pirmas && pirmas > trecias) || (antras < pirmas && pirmas < trecias)){
+                 console.log( "2Sk:" + antras + " vid:" + pirmas + " gal:" + trecias);
+            }else{
+
+                if((antras > trecias && trecias > pirmas) || (antras < trecias && trecias < pirmas)){
+                     console.log( "3Sk:" + pirmas + " vid:" + trecias + " gal:" + antras);
+                 }
+            }
+        }
+     
+    // sekanti uzduotis 
+    // 4. sukurkite 3 kintamuosius a, b ir c, kurie bus trikampio kraštinių ilgiai. priskirkite jiems random reikšmes nuo 1 iki 10. parašykite kodą kuris patikrins, ar iš kraštinių susidaro trikampis.
+
+    var a = pirmas;
+    var b = antras;
+    var c = trecias;
+
+    if( (a + b) > c && (a + c) > b && (b + c) > a){
+        console.log("Trikampis nesigauna");
+    }else{
+        console.log("Trikampis gaunasi");
+    }
+
+    
+
+
+
+
+
+
+
     </script>
 </body>
 </html>
